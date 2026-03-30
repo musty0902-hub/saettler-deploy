@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unser Team – Zahnarzt Buseck | Dr. med. dent. Matthias Sättler</title>
+  <meta name="description" content="Lernen Sie das Team Ihrer Zahnarztpraxis in Buseck kennen: Dr. Matthias Sättler sowie unser freundliches Praxisteam.">
+  <link rel="stylesheet" href="index.css">
+  <style>
+    .team-member-full {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 56px;
+      align-items: center;
+      padding-block: 64px;
+      border-bottom: 1px solid var(--ivory-dark);
+    }
+    .team-member-full:last-child { border-bottom: none; }
+    .team-member-full.reverse { direction: rtl; }
+    .team-member-full.reverse > * { direction: ltr; }
+    .team-member-photo {
+      border-radius: 16px;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      width: 100%;
+      box-shadow: var(--shadow-lg);
+    }
+    .team-member-photo-placeholder {
+      border-radius: 16px;
+      aspect-ratio: 3/4;
+      background: linear-gradient(135deg, var(--ivory-dark), var(--sage-light));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+      width: 100%;
+    }
+    .member-title {
+      font-size: .75rem;
+      font-weight: 600;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--rose);
+      margin-bottom: 12px;
+    }
+    .member-name { margin-bottom: 6px; }
+    .member-spec {
+      font-size: .8rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--sage);
+      margin-bottom: 24px;
+    }
+    .member-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 24px;
+    }
+    .tag {
+      background: var(--ivory-dark);
+      border: 1px solid rgba(196,137,111,.2);
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: .78rem;
+      color: var(--navy);
+    }
+    @media (max-width: 750px) {
+      .team-member-full { grid-template-columns: 1fr; }
+      .team-member-full.reverse { direction: ltr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-name">Dr. med. dent. Matthias Sättler</span>
+      <span class="nav-logo-sub">Zahnarzt · Buseck</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="leistungen.html">Leistungen</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="praxis.html">Praxis</a></li>
+      <li><a href="neupatienten.html">Neupatienten</a></li>
+      <li><a href="kontakt.html" class="nav-cta">Termin anfragen</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<nav class="nav-mobile">
+  <a href="index.html">Start</a>
+  <a href="leistungen.html">Leistungen</a>
+  <a href="team.html">Team</a>
+  <a href="praxis.html">Praxis</a>
+  <a href="neupatienten.html">Neupatienten</a>
+  <a href="kontakt.html" class="nav-cta">Termin anfragen</a>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <p class="page-hero-eyebrow">Wer wir sind</p>
+    <h1>Ihr Team</h1>
+    <p class="lead">Ein Zahnarzt, ein eingespieltes Team – und eine gemeinsame Leidenschaft für gesunde Zähne und zufriedene Patienten.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <!-- Dr. Sättler -->
+    <div class="team-member-full">
+      <div class="team-member-photo-placeholder reveal">🧑‍⚕️</div>
+      <div class="reveal">
+        <p class="member-title">Zahnarzt</p>
+        <h2 class="member-name">Dr. med. dent. Matthias Sättler</h2>
+        <p class="member-spec">Zahnarzt aus Leidenschaft</p>
+        <p>Dr. Matthias Sättler ist Ihr erfahrener Ansprechpartner in allen Bereichen der modernen Zahnheilkunde in Buseck. Sein Konzept verbindet höchste zahnmedizinische Qualitätsansprüche mit einer menschlichen, empathischen Betreuung.</p>
+        <p style="margin-top:12px;">Sein Ziel ist es, den Zahnarztbesuch so angenehm wie möglich zu gestalten. Er nimmt sich die Zeit für eine ausführliche Beratung und wählt Behandlungswege, die individuell auf die Bedürfnisse jedes Patienten abgestimmt sind – vom Kleinkind bis zum Senioren.</p>
+        <div class="member-tags">
+          <span class="tag">Ästhetik</span>
+          <span class="tag">Prophylaxe</span>
+          <span class="tag">Zahnerhalt</span>
+          <span class="tag">Angstpatienten</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Praxis-Team -->
+<section class="section section--alt" aria-labelledby="praxisteam-heading">
+  <div class="container">
+    <div class="section-header text-center">
+      <span class="section-label">Das ganze Team</span>
+      <h2 id="praxisteam-heading">Freundlich. Kompetent.<br>Immer für Sie da.</h2>
+      <div class="section-divider center"></div>
+      <p class="lead" style="text-align:center; margin-inline:auto; margin-top:16px;">Hinter jeder gelungenen Behandlung steht nicht nur das Können der Ärzte, sondern auch unser engagiertes Team aus Zahnmedizinischen Fachangestellten und Prophylaxeassistentinnen.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card reveal" style="text-align:center;">
+        <div class="card-icon" style="margin:0 auto 16px;" aria-hidden="true">📋</div>
+        <h3>Rezeption &amp; Terminverwaltung</h3>
+        <p>Unser freundliches Empfangsteam kümmert sich um eine reibungslose Organisation – von der Terminplanung bis zur Abrechnungsberatung.</p>
+      </div>
+      <div class="card reveal reveal-delay-1" style="text-align:center;">
+        <div class="card-icon" style="margin:0 auto 16px;" aria-hidden="true">🦷</div>
+        <h3>ZFA &amp; Behandlungsassistenz</h3>
+        <p>Unsere erfahrenen zahnmedizinischen Fachangestellten unterstützen die Ärzte bei allen Behandlungen und sorgen für einen ruhigen Ablauf.</p>
+      </div>
+      <div class="card reveal reveal-delay-2" style="text-align:center;">
+        <div class="card-icon" style="margin:0 auto 16px;" aria-hidden="true">✨</div>
+        <h3>Prophylaxeassistentinnen</h3>
+        <p>Speziell geschulte Prophylaxeassistentinnen führen die professionelle Zahnreinigung durch und beraten Sie zu Ihrer täglichen Mundhygiene.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container">
+    <h2>Lernen Sie uns persönlich kennen</h2>
+    <p>Vereinbaren Sie einen Termin – wir freuen uns auf Sie.</p>
+    <a href="kontakt.html" class="btn" style="background:white;color:var(--rose);">Termin anfragen</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand-name">Dr. med. dent. Matthias Sättler</p>
+        <p class="footer-brand-sub">Zahnarzt · Buseck</p>
+        <p class="footer-desc">Ihre Zahnarztpraxis mit Herz in Buseck bei Gießen.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="leistungen.html">Leistungen</a></li>
+          <li><a href="team.html">Unser Team</a></li>
+          <li><a href="praxis.html">Die Praxis</a></li>
+          <li><a href="neupatienten.html">Neupatienten</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Rechtliches</h5>
+        <ul><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h5>Kontakt</h5>
+        <div class="footer-contact-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 013.12 4.18 2 2 0 015.09 2h3.09a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.09 9.91a16 16 0 006.99 6.99l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+4964083088" style="color:inherit;">0 64 08 / 30 88</a></div>
+        <div class="footer-contact-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Bismarckstraße 29, 35418 Buseck</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Praxis Dr. med. dent. Matthias Sättler Zahnarzt</span>
+      <div class="footer-bottom-links"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
+    </div>
+  </div>
+</footer>
+<script src="nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt &amp; Öffnungszeiten – Zahnarzt Buseck</title>
+  <meta name="description" content="Kontaktieren Sie Ihre Zahnarztpraxis in Buseck: Tel. 0 64 08 / 30 88. Öffnungszeiten, Anfahrt und Online-Terminanfrage.">
+  <link rel="stylesheet" href="index.css">
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 56px;
+      align-items: start;
+    }
+    .map-frame {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      aspect-ratio: 4/3;
+      width: 100%;
+    }
+    .map-frame iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+    .info-block {
+      background: var(--white);
+      border: 1px solid rgba(196,137,111,.18);
+      border-radius: var(--r-md);
+      padding: 28px;
+      margin-bottom: 16px;
+    }
+    .info-block h4 {
+      font-size: .75rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--rose);
+      margin-bottom: 12px;
+    }
+    .info-block h3 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+    @media (max-width: 800px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-name">Dr. med. dent. Matthias Sättler</span>
+      <span class="nav-logo-sub">Zahnarzt · Buseck</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="leistungen.html">Leistungen</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="praxis.html">Praxis</a></li>
+      <li><a href="neupatienten.html">Neupatienten</a></li>
+      <li><a href="kontakt.html" class="nav-cta">Termin anfragen</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<nav class="nav-mobile">
+  <a href="index.html">Start</a>
+  <a href="leistungen.html">Leistungen</a>
+  <a href="team.html">Team</a>
+  <a href="praxis.html">Praxis</a>
+  <a href="neupatienten.html">Neupatienten</a>
+  <a href="kontakt.html" class="nav-cta">Termin anfragen</a>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <p class="page-hero-eyebrow">Wir sind für Sie da</p>
+    <h1>Kontakt</h1>
+    <p class="lead">Rufen Sie uns an, schreiben Sie uns oder kommen Sie einfach vorbei – wir freuen uns auf Sie.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- Left: Info + Form -->
+      <div>
+        <div class="info-block reveal">
+          <h4>Adresse</h4>
+          <p style="font-size:1rem; color:var(--navy); font-weight:500;">Bismarckstraße 29<br>35418 Buseck</p>
+        </div>
+        <div class="info-block reveal">
+          <h4>Telefon &amp; Fax</h4>
+          <p style="margin-bottom:6px;"><a href="tel:+4964083088" style="font-size:1.1rem; color:var(--navy); font-weight:600; text-decoration:none;">0 64 08 / 30 88</a></p>
+          <p style="font-size:.9rem; color:var(--muted);">Fax: 0 64 08 / 30 89</p>
+        </div>
+        <div class="info-block reveal">
+          <h4>Öffnungszeiten</h4>
+          <table class="hours-table" aria-label="Öffnungszeiten">
+            <tr><td>Montag</td><td>08:00–13:00 &amp; 14:00–18:00</td></tr>
+            <tr><td>Dienstag</td><td>08:00–13:00 &amp; 14:00–18:00</td></tr>
+            <tr><td>Mittwoch</td><td>08:00–13:00</td></tr>
+            <tr><td>Donnerstag</td><td>08:00–13:00 &amp; 14:00–18:00</td></tr>
+            <tr><td>Freitag</td><td>08:00–13:00</td></tr>
+            <tr><td style="color:var(--muted);">Samstag &amp; Sonntag</td><td style="color:var(--muted); font-weight:400;">Geschlossen</td></tr>
+          </table>
+          <p style="font-size:.82rem; margin-top:14px; color:var(--muted);">Bei akuten Zahnschmerzen außerhalb der Öffnungszeiten wenden Sie sich bitte an den <strong>zahnärztlichen Notdienst</strong> (<a href="https://www.kzvh.de/fuer-patienten/notfalldienst" target="_blank" rel="noopener" style="color:var(--rose);">kzvh.de</a>).</p>
+        </div>
+
+        <!-- Kontaktformular -->
+        <div class="reveal" style="margin-top:32px;">
+          <h3 style="font-family:var(--font-display); font-size:1.8rem; color:var(--navy); margin-bottom:8px;">Terminanfrage</h3>
+          <p style="margin-bottom:24px; font-size:.9rem;">Füllen Sie das Formular aus – wir melden uns innerhalb eines Werktages bei Ihnen.</p>
+          <form id="contact-form" action="#" method="post" novalidate aria-label="Kontaktformular">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="vorname">Vorname</label>
+                <input type="text" id="vorname" name="vorname" required autocomplete="given-name" placeholder="Max">
+              </div>
+              <div class="form-group">
+                <label for="nachname">Nachname</label>
+                <input type="text" id="nachname" name="nachname" required autocomplete="family-name" placeholder="Mustermann">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="telefon">Telefonnummer</label>
+              <input type="tel" id="telefon" name="telefon" autocomplete="tel" placeholder="0641 12345">
+            </div>
+            <div class="form-group">
+              <label for="email">E-Mail-Adresse</label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="max@example.de">
+            </div>
+            <div class="form-group">
+              <label for="anliegen">Ihr Anliegen</label>
+              <select id="anliegen" name="anliegen">
+                <option value="">Bitte auswählen …</option>
+                <option>Erstbesuch / Kennenlernen</option>
+                <option>Prophylaxe / Zahnreinigung</option>
+                <option>Schmerzbehandlung (dringend)</option>
+                <option>Beratung Ästhetik / Bleaching</option>
+                <option>Beratung Implantate</option>
+                <option>Kindertermin</option>
+                <option>Sonstiges</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="nachricht">Nachricht (optional)</label>
+              <textarea id="nachricht" name="nachricht" rows="4" placeholder="Ihre Angaben helfen uns, den Termin optimal vorzubereiten."></textarea>
+            </div>
+            <div class="form-group" style="flex-direction:row; align-items:flex-start; gap:12px;">
+              <input type="checkbox" id="datenschutz" name="datenschutz" required style="width:18px; height:18px; margin-top:3px; accent-color:var(--rose); flex-shrink:0;">
+              <label for="datenschutz" style="font-size:.85rem; font-weight:400; text-transform:none; letter-spacing:0; color:var(--muted); cursor:pointer;">Ich habe die <a href="datenschutz.html" style="color:var(--rose);">Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage einverstanden.</label>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Anfrage absenden</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right: Map -->
+      <div class="reveal" style="position:sticky; top:calc(var(--nav-h) + 20px);">
+        <div class="map-frame" aria-label="Standort der Praxis">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=8.7645%2C50.6021%2C8.8045%2C50.6221&amp;layer=mapnik&amp;marker=50.6121%2C8.7845"
+            title="Kartenausschnitt Bismarckstraße 29, Buseck"
+            loading="lazy"
+            aria-label="OpenStreetMap Karte: Lage der Zahnarztpraxis Buseck">
+          </iframe>
+        </div>
+        <a
+          href="https://www.openstreetmap.org/?mlat=50.6121&amp;mlon=8.7845#map=15/50.6121/8.7845"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-outline"
+          style="margin-top:12px; width:100%; justify-content:center; font-size:.8rem;">
+          In größerer Karte öffnen
+        </a>
+        <div style="margin-top:20px;" class="card">
+          <h4 style="margin-bottom:10px;">Anfahrt &amp; Parken</h4>
+          <p style="font-size:.88rem;">Die Praxis liegt zentral in Buseck, Bismarckstraße 29. Parkplätze befinden sich direkt vor dem Gebäude. Aus Gießen kommend: B49 Richtung Buseck, Abfahrt Buseck-Launsbach.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand-name">Dr. med. dent. Matthias Sättler</p>
+        <p class="footer-brand-sub">Zahnarzt · Buseck</p>
+        <p class="footer-desc">Ihre Zahnarztpraxis mit Herz in Buseck bei Gießen.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="leistungen.html">Leistungen</a></li>
+          <li><a href="team.html">Unser Team</a></li>
+          <li><a href="praxis.html">Die Praxis</a></li>
+          <li><a href="neupatienten.html">Neupatienten</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Rechtliches</h5>
+        <ul><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h5>Kontakt</h5>
+        <div class="footer-contact-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 013.12 4.18 2 2 0 015.09 2h3.09a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.09 9.91a16 16 0 006.99 6.99l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+4964083088" style="color:inherit;">0 64 08 / 30 88</a></div>
+        <div class="footer-contact-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Bismarckstraße 29, 35418 Buseck</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Praxis Dr. med. dent. Matthias Sättler Zahnarzt</span>
+      <div class="footer-bottom-links"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
+    </div>
+  </div>
+</footer>
+<script src="nav.js"></script>
+</body>
+</html>
